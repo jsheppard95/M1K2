@@ -50,11 +50,11 @@ M4.nEnableMode; // Xdwn
 M5.nEnableMode; // PitchCoarse
 
 // Encoder Reference Values: Taking from Axilon FAT
-//M2K3 Ref Vals
-y_up_enc.Ref := 106817000;
-y_dwn_enc.Ref := 108078000; // Use initial motor positions for now
-x_up_enc.Ref := 19944000;
-x_dwn_enc.Ref := 19728000;
+//M1K2 Ref Vals
+y_up_enc.Ref := 64970000;
+y_dwn_enc.Ref := 65030000; // Use initial motor positions for now
+x_up_enc.Ref := 20302000;
+x_dwn_enc.Ref := 21280500;
 
 // Gantry Differences to monitor
 nCurrGantryY := ((ULINT_TO_LINT(y_up_enc.Count) - ULINT_TO_LINT(y_up_enc.Ref)) - (ULINT_TO_LINT(y_dwn_enc.Count) - ULINT_TO_LINT(y_dwn_enc.Ref)));
