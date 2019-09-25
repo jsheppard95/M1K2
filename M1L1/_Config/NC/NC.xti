@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4020.56" ClassName="CNcSafTaskDef" SubType="0">
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4022.30" ClassName="CNcSafTaskDef" SubType="0">
 	<DataTypes>
 		<DataType>
 			<Name GUID="{76EB036C-07A7-446B-91CB-CECCF6977DF3}" TcBaseType="true" HideType="true">UINTARR2_2</Name>
@@ -1346,8 +1346,9 @@ External Setpoint Generation:
 				<OtherSettings AllowMotionCmdToSlave="true"/>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
-				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff">
+				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff" ReferenceSystem="1">
 					<Inc RefSoftSyncMask="#x0000ffff"/>
+					<ParameterChanged>25</ParameterChanged>
 				</EncPara>
 				<Vars VarGrpType="1">
 					<Name>Inputs</Name>
@@ -1554,8 +1555,9 @@ External Setpoint Generation:
 				<OtherSettings AllowMotionCmdToSlave="true"/>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
-				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff">
+				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff" ReferenceSystem="1">
 					<Inc RefSoftSyncMask="#x0000ffff"/>
+					<ParameterChanged>25</ParameterChanged>
 				</EncPara>
 				<Vars VarGrpType="1">
 					<Name>Inputs</Name>
@@ -1764,8 +1766,9 @@ External Setpoint Generation:
 				<OtherSettings AllowMotionCmdToSlave="true"/>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
-				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff">
+				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff" ReferenceSystem="1">
 					<Inc RefSoftSyncMask="#x0000ffff"/>
+					<ParameterChanged>25</ParameterChanged>
 				</EncPara>
 				<Vars VarGrpType="1">
 					<Name>Inputs</Name>
@@ -1974,8 +1977,9 @@ External Setpoint Generation:
 				<OtherSettings AllowMotionCmdToSlave="true"/>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
-				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff">
+				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff" ReferenceSystem="1">
 					<Inc RefSoftSyncMask="#x0000ffff"/>
+					<ParameterChanged>25</ParameterChanged>
 				</EncPara>
 				<Vars VarGrpType="1">
 					<Name>Inputs</Name>
@@ -2017,9 +2021,10 @@ External Setpoint Generation:
 				</Vars>
 			</Encoder>
 			<Drive Name="Drive" DrvType="24">
-				<DrvPara>
+				<DrvPara Inverse="true">
 					<Analog VeloReferenz="625"/>
 					<TimeComp TaskDelayCycles="1"/>
+					<ParameterChanged>6</ParameterChanged>
 				</DrvPara>
 				<Vars VarGrpType="1">
 					<Name>Inputs</Name>
@@ -2182,11 +2187,14 @@ External Setpoint Generation:
 				<Dynamic Acceleration="64082.2" Deceleration="64082.2" Jerk="711156" DelayTime="0.008"/>
 				<Velo Maximum="7042"/>
 				<OtherSettings AllowMotionCmdToSlave="true"/>
+				<ParameterChanged>257</ParameterChanged>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
-				<EncPara ScaleFactorNumerator="0.00556" MaxCount="#xffffffff">
+				<EncPara ScaleFactorNumerator="0.00256" MaxCount="#xffffffff" ReferenceSystem="1">
 					<ActPosCorrection Time="0.008"/>
 					<Inc RefSoftSyncMask="#x0000ffff"/>
+					<ParameterChanged>25</ParameterChanged>
+					<ParameterChanged>35</ParameterChanged>
 				</EncPara>
 				<Vars VarGrpType="1">
 					<Name>Inputs</Name>
@@ -2229,7 +2237,7 @@ External Setpoint Generation:
 			</Encoder>
 			<Drive Name="Drive" DrvType="24">
 				<DrvPara Inverse="true">
-					<Analog VeloReferenz="7042.25"/>
+					<Analog VeloReferenz="558.03"/>
 					<TimeComp TaskDelayCycles="1"/>
 				</DrvPara>
 				<Vars VarGrpType="1">
@@ -2319,9 +2327,12 @@ Drive Status 4 (manually linked):
 			</Drive>
 			<Controller Name="Ctrl" CtrType="3">
 				<CtrPara PriorControlFactor="1">
-					<PosDiffControl Range="15" Time="0.2"/>
-					<PID PosKp="9" PosTn="0.0006" PosTv="1.2e-005" PosIOutputLimit="0.0005" PosDOutputLimit="0.0035" AccKa="0.001" DeadBandPosition="0.1"/>
+					<PosDiffControl Range="10" Time="0.2"/>
+					<PID PosKp="9" PosTn="0.0006" PosTv="1.2e-05" PosIOutputLimit="0.0001" PosDOutputLimit="0.0035" AccKa="0.001" DeadBandPosition="0.001"/>
 					<Observer BandWidth="20"/>
+					<ParameterChanged>269</ParameterChanged>
+					<ParameterChanged>18</ParameterChanged>
+					<ParameterChanged>278</ParameterChanged>
 				</CtrPara>
 			</Controller>
 			<Vars VarGrpType="1" InsertType="1">

@@ -41,7 +41,7 @@ VAR
 	nGantryTolY : LINT := 25000;
 END_VAR]]></Declaration>
     <Implementation>
-      <ST><![CDATA[// M1K3
+      <ST><![CDATA[// M1K2
 // Buttons to enable motors: write 0 to enable, 2 to disable
 M1.nEnableMode; // Yup
 M2.nEnableMode; // Ydwn
