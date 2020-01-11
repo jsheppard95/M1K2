@@ -123,12 +123,12 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.pitch.ACTPOS</SymbolName>
+                <SymbolName>AXES.y_up.ACTPOS</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>85</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -348,12 +348,12 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.pitch.SETPOS</SymbolName>
+                <SymbolName>AXES.y_up.SETPOS</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>86</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -607,12 +607,12 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.pitch.ACTVELO</SymbolName>
+                <SymbolName>AXES.y_up.ACTVELO</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>87</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -832,12 +832,12 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.pitch.SETVELO</SymbolName>
+                <SymbolName>AXES.y_up.SETVELO</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>88</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -1091,12 +1091,12 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.pitch.POSDIFF</SymbolName>
+                <SymbolName>AXES.y_up.POSDIFF</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>89</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -1318,7 +1318,7 @@
           <Name>Pos-Slave</Name>
           <Style>
             <Visible>true</Visible>
-            <Enabled>false</Enabled>
+            <Enabled>true</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
             <Ticks>10</Ticks>
@@ -1345,17 +1345,17 @@
               <IdentHandle>6</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16649</IndexGroup>
+                <IndexGroup>16647</IndexGroup>
                 <IndexOffset>65538</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.x_dwn.ActPos</SymbolName>
+                <SymbolName>Axes.y_dwn.ActPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>90</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -1570,17 +1570,17 @@
               <IdentHandle>7</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16649</IndexGroup>
+                <IndexGroup>16647</IndexGroup>
                 <IndexOffset>10</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.x_dwn.SetPos</SymbolName>
+                <SymbolName>Axes.y_dwn.SetPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>91</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -1802,7 +1802,7 @@
           <Name>Velo-Slave</Name>
           <Style>
             <Visible>true</Visible>
-            <Enabled>false</Enabled>
+            <Enabled>true</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
             <Ticks>10</Ticks>
@@ -1829,17 +1829,17 @@
               <IdentHandle>8</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16649</IndexGroup>
+                <IndexGroup>16647</IndexGroup>
                 <IndexOffset>65541</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.x_dwn.ActVelo</SymbolName>
+                <SymbolName>Axes.y_dwn.ActVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>92</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -2054,17 +2054,17 @@
               <IdentHandle>9</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16649</IndexGroup>
+                <IndexGroup>16647</IndexGroup>
                 <IndexOffset>14</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.x_dwn.SetVelo</SymbolName>
+                <SymbolName>Axes.y_dwn.SetVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>93</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -2286,7 +2286,7 @@
           <Name>Lag-Slave</Name>
           <Style>
             <Visible>true</Visible>
-            <Enabled>false</Enabled>
+            <Enabled>true</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
             <Ticks>10</Ticks>
@@ -2313,17 +2313,17 @@
               <IdentHandle>10</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16649</IndexGroup>
+                <IndexGroup>16647</IndexGroup>
                 <IndexOffset>131087</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.x_dwn.PosDiff</SymbolName>
+                <SymbolName>Axes.y_dwn.PosDiff</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>94</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -2573,7 +2573,7 @@
               <Acquisition>
                 <DataType>INT64</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>646016</IndexOffset>
+                <IndexOffset>646048</IndexOffset>
                 <Unit />
                 <TargetPort>851</TargetPort>
                 <VariableSize>8</VariableSize>
@@ -2582,7 +2582,7 @@
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>95</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>100000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -2832,7 +2832,7 @@
               <Acquisition>
                 <DataType>INT64</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>646024</IndexOffset>
+                <IndexOffset>646056</IndexOffset>
                 <Unit />
                 <TargetPort>851</TargetPort>
                 <VariableSize>8</VariableSize>
@@ -2841,7 +2841,7 @@
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>96</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>5.54.18.124.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>100000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -3071,7 +3071,7 @@
         <Precision>6</Precision>
       </CursorModule>
       <Operating>
-        <DisplayWidth>5100000000</DisplayWidth>
+        <DisplayWidth>100000000</DisplayWidth>
       </Operating>
       <ChartType>XT</ChartType>
       <SortPriority>-1</SortPriority>
