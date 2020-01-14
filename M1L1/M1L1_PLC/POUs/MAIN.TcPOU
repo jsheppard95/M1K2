@@ -44,8 +44,12 @@ M5.nEnableMode; // PitchCoarse
 
 // Encoder Reference Values: Taking from Axilon FAT
 // M1K2 Ref Vals
+(*
 y_up_enc.Ref := 64970000;
 y_dwn_enc.Ref := 65030000;
+*)
+y_up_enc.Ref := 99975770;
+y_dwn_enc.Ref := 102564900;
 x_up_enc.Ref := 20302000;
 x_dwn_enc.Ref := 21280500;
 

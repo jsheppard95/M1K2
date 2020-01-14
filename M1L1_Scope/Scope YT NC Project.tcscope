@@ -5,7 +5,7 @@
   <IsWizardTemplate>false</IsWizardTemplate>
   <LayoutString>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;Layout&gt;
-  &lt;Window Guid="b1560a06-9992-4c8c-9f35-e7602e22de09" LastFocused="132133210755270259" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="b1560a06-9992-4c8c-9f35-e7602e22de09" LastFocused="132235144533658926" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="eb8d551f-2cc7-4025-b2af-4a164df487ad" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;DocumentContainer Dock="5"&gt;
     &lt;SplitLayoutSystem WorkingSize="250, 400" SplitMode="0"&gt;
       &lt;ControlLayoutSystem WorkingSize="250, 400" Guid="eb8d551f-2cc7-4025-b2af-4a164df487ad" Collapsed="0" SelectedControl="b1560a06-9992-4c8c-9f35-e7602e22de09"&gt;
@@ -18,7 +18,7 @@
 &lt;/Layout&gt;</LayoutString>
   <Operating>
     <RecordTime>36000000000</RecordTime>
-    <DataFileName>C:\Users\pcds\Documents\Visual Studio 2013\Projects\M1L1</DataFileName>
+    <DataFileName>C:\Users\sheppard\Desktop</DataFileName>
     <RunMode>ClientStart</RunMode>
     <StopMode>AutoStop</StopMode>
     <ServerUseFileStore>true</ServerUseFileStore>
@@ -47,7 +47,7 @@
         <BorderColorValue>-1973016</BorderColorValue>
         <IsSmooth>false</IsSmooth>
         <SmoothTime>100</SmoothTime>
-        <YZoom>true</YZoom>
+        <YZoom>false</YZoom>
         <StackedYAxes>true</StackedYAxes>
         <Legend>false</Legend>
         <VisibleToolstrip>true</VisibleToolstrip>
@@ -109,7 +109,7 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
-            <ScaleMode>AutoGrowOnly</ScaleMode>
+            <ScaleMode>AutoGrowNShrink</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
@@ -126,7 +126,7 @@
                 <SymbolName>AXES.y_up.ACTPOS</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>85</FileHandle>
+                <FileHandle>49</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -351,7 +351,7 @@
                 <SymbolName>AXES.y_up.SETPOS</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>86</FileHandle>
+                <FileHandle>50</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -575,7 +575,7 @@
           <Name>Velocity</Name>
           <Style>
             <Visible>true</Visible>
-            <Enabled>true</Enabled>
+            <Enabled>false</Enabled>
             <ColorValue>-16744384</ColorValue>
             <UseGrid>true</UseGrid>
             <Ticks>10</Ticks>
@@ -593,7 +593,7 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
-            <ScaleMode>AutoGrowOnly</ScaleMode>
+            <ScaleMode>AutoGrowNShrink</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
@@ -610,7 +610,7 @@
                 <SymbolName>AXES.y_up.ACTVELO</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>87</FileHandle>
+                <FileHandle>51</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -835,7 +835,7 @@
                 <SymbolName>AXES.y_up.SETVELO</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>88</FileHandle>
+                <FileHandle>52</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -1094,7 +1094,7 @@
                 <SymbolName>AXES.y_up.POSDIFF</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>89</FileHandle>
+                <FileHandle>53</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -1336,7 +1336,7 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
-            <ScaleMode>AutoGrowOnly</ScaleMode>
+            <ScaleMode>AutoGrowNShrink</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
@@ -1345,15 +1345,15 @@
               <IdentHandle>6</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16647</IndexGroup>
+                <IndexGroup>16648</IndexGroup>
                 <IndexOffset>65538</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.y_dwn.ActPos</SymbolName>
+                <SymbolName>Axes.x_up.ActPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>90</FileHandle>
+                <FileHandle>54</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -1570,15 +1570,15 @@
               <IdentHandle>7</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16647</IndexGroup>
+                <IndexGroup>16648</IndexGroup>
                 <IndexOffset>10</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.y_dwn.SetPos</SymbolName>
+                <SymbolName>Axes.x_up.SetPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>91</FileHandle>
+                <FileHandle>55</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -1802,7 +1802,7 @@
           <Name>Velo-Slave</Name>
           <Style>
             <Visible>true</Visible>
-            <Enabled>true</Enabled>
+            <Enabled>false</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
             <Ticks>10</Ticks>
@@ -1820,7 +1820,7 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
-            <ScaleMode>AutoGrowOnly</ScaleMode>
+            <ScaleMode>AutoGrowNShrink</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
@@ -1829,15 +1829,15 @@
               <IdentHandle>8</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16647</IndexGroup>
+                <IndexGroup>16648</IndexGroup>
                 <IndexOffset>65541</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.y_dwn.ActVelo</SymbolName>
+                <SymbolName>Axes.x_up.ActVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>92</FileHandle>
+                <FileHandle>56</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -2054,15 +2054,15 @@
               <IdentHandle>9</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16647</IndexGroup>
+                <IndexGroup>16648</IndexGroup>
                 <IndexOffset>14</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.y_dwn.SetVelo</SymbolName>
+                <SymbolName>Axes.x_up.SetVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>93</FileHandle>
+                <FileHandle>57</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -2286,7 +2286,7 @@
           <Name>Lag-Slave</Name>
           <Style>
             <Visible>true</Visible>
-            <Enabled>true</Enabled>
+            <Enabled>false</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
             <Ticks>10</Ticks>
@@ -2304,7 +2304,7 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
-            <ScaleMode>AutoGrowOnly</ScaleMode>
+            <ScaleMode>AutoGrowNShrink</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
@@ -2313,15 +2313,15 @@
               <IdentHandle>10</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16647</IndexGroup>
+                <IndexGroup>16648</IndexGroup>
                 <IndexOffset>131087</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.y_dwn.PosDiff</SymbolName>
+                <SymbolName>Axes.x_up.PosDiff</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>94</FileHandle>
+                <FileHandle>58</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -2545,7 +2545,7 @@
           <Name>Gantry X</Name>
           <Style>
             <Visible>true</Visible>
-            <Enabled>true</Enabled>
+            <Enabled>false</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
             <Ticks>10</Ticks>
@@ -2563,7 +2563,7 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
-            <ScaleMode>AutoGrowOnly</ScaleMode>
+            <ScaleMode>AutoGrowNShrink</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
@@ -2580,7 +2580,7 @@
                 <SymbolName>MAIN.nCurrGantryX</SymbolName>
                 <SymbolComment> Gantry variables</SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>95</FileHandle>
+                <FileHandle>59</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>100000</SampleTime>
@@ -2804,7 +2804,7 @@
           <Name>Gantry Y</Name>
           <Style>
             <Visible>true</Visible>
-            <Enabled>true</Enabled>
+            <Enabled>false</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
             <Ticks>10</Ticks>
@@ -2822,7 +2822,7 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
-            <ScaleMode>AutoGrowOnly</ScaleMode>
+            <ScaleMode>AutoGrowNShrink</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
@@ -2839,7 +2839,7 @@
                 <SymbolName>MAIN.nCurrGantryY</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>96</FileHandle>
+                <FileHandle>60</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>100000</SampleTime>
