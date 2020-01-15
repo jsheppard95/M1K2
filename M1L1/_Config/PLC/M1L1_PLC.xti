@@ -701,15 +701,15 @@ External Setpoint Generation:
 			</Relations>
 		</DataType>
 		<DataType>
-			<Name GUID="{7746E4F2-5385-4DAD-ADC4-6167C5A1520E}" Namespace="lcls_twincat_motion" AutoDeleteType="true">EL5042_Status</Name>
+			<Name GUID="{E8CF5D85-0CA5-44FB-B6F5-FB9E3DA9394D}" Namespace="lcls_twincat_motion" AutoDeleteType="true">EL5042_Status</Name>
 			<BitSize>0</BitSize>
 			<BaseType GUID="{FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF}"/>
 			<Hides>
-				<Hide GUID="{7034C368-FA23-485F-AD9D-F5E71C388F78}"/>
+				<Hide GUID="{7746E4F2-5385-4DAD-ADC4-6167C5A1520E}"/>
 			</Hides>
 		</DataType>
 		<DataType>
-			<Name GUID="{FC2065B9-BEE5-4894-BD7E-40DD7D489988}" Namespace="lcls_twincat_motion" AutoDeleteType="true">ST_RenishawAbsEnc</Name>
+			<Name GUID="{3F8E5AF3-9F56-4AC7-A164-EC724418BFB0}" Namespace="lcls_twincat_motion" AutoDeleteType="true">ST_RenishawAbsEnc</Name>
 			<Comment>
 				<![CDATA[ Renishaw BiSS-C absolute encoder used with an EL5042 ]]>
 			</Comment>
@@ -731,7 +731,7 @@ External Setpoint Generation:
 			</SubItem>
 			<SubItem>
 				<Name>Status</Name>
-				<Type GUID="{7746E4F2-5385-4DAD-ADC4-6167C5A1520E}" Namespace="lcls_twincat_motion">EL5042_Status</Type>
+				<Type GUID="{E8CF5D85-0CA5-44FB-B6F5-FB9E3DA9394D}" Namespace="lcls_twincat_motion">EL5042_Status</Type>
 				<Comment>
 					<![CDATA[ Status struct placeholder]]>
 				</Comment>
@@ -748,7 +748,7 @@ External Setpoint Generation:
 				<BitOffs>64</BitOffs>
 			</SubItem>
 			<Hides>
-				<Hide GUID="{4F0B5A44-486C-4728-8751-3B1FDBBAEB88}"/>
+				<Hide GUID="{FC2065B9-BEE5-4894-BD7E-40DD7D489988}"/>
 			</Hides>
 		</DataType>
 		<DataType>
@@ -1583,7 +1583,7 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>MAIN.x_up_enc</Name>
-					<Type GUID="{FC2065B9-BEE5-4894-BD7E-40DD7D489988}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
+					<Type GUID="{3F8E5AF3-9F56-4AC7-A164-EC724418BFB0}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1605,7 +1605,7 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>MAIN.x_dwn_enc</Name>
-					<Type GUID="{FC2065B9-BEE5-4894-BD7E-40DD7D489988}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
+					<Type GUID="{3F8E5AF3-9F56-4AC7-A164-EC724418BFB0}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1627,7 +1627,7 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>MAIN.y_up_enc</Name>
-					<Type GUID="{FC2065B9-BEE5-4894-BD7E-40DD7D489988}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
+					<Type GUID="{3F8E5AF3-9F56-4AC7-A164-EC724418BFB0}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1649,7 +1649,7 @@ External Setpoint Generation:
 				</Var>
 				<Var>
 					<Name>MAIN.y_dwn_enc</Name>
-					<Type GUID="{FC2065B9-BEE5-4894-BD7E-40DD7D489988}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
+					<Type GUID="{3F8E5AF3-9F56-4AC7-A164-EC724418BFB0}" Namespace="lcls_twincat_motion">ST_RenishawAbsEnc</Type>
 					<SubVar>
 						<Name>Count</Name>
 						<Comment>
@@ -1829,13 +1829,13 @@ External Setpoint Generation:
 				<Link VarA="PlcTask Inputs^MAIN.M3.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^MAIN.M3.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
 			</OwnerB>
-			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^y_dwn">
-				<Link VarA="PlcTask Inputs^MAIN.M2.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
-				<Link VarA="PlcTask Outputs^MAIN.M2.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
-			</OwnerB>
-			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^y_up">
+			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^y_left">
 				<Link VarA="PlcTask Inputs^MAIN.M1.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^MAIN.M1.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
+			</OwnerB>
+			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^y_right">
+				<Link VarA="PlcTask Inputs^MAIN.M2.Axis.NcToPlc" VarB="Outputs^ToPlc"/>
+				<Link VarA="PlcTask Outputs^MAIN.M2.Axis.PlcToNc" VarB="Inputs^FromPlc"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>

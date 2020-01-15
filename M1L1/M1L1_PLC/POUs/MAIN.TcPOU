@@ -2,12 +2,20 @@
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <POU Name="MAIN" Id="{2ce36a91-321d-4828-96a2-d7e21b9a58d0}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
-VAR		
+VAR
+	// Axis Structs
     M1: DUT_MotionStage:=(nCommand:=3); // Yup
 	M2: DUT_MotionStage:=(nCommand:=3); // Ydwn
 	M3: DUT_MotionStage:=(nCommand:=3); // Xup
 	M4: DUT_MotionStage:=(nCommand:=3); // Xdwn
 	M5: DUT_MotionStage:=(nCommand:=3); // PitchCoarse
+
+	// Axis_Extras Structs
+	M1_Extras : DUT_MotionStage_Extras;
+	M2_Extras : DUT_MotionStage_Extras;
+	M3_Extras : DUT_MotionStage_Extras;
+	M4_Extras : DUT_MotionStage_Extras;
+	M5_Extras : DUT_MotionStage_Extras;
 
 	fbMotionStage_x_up, fbMotionStage_x_dwn, fbMotionStage_y_up, fbMotionStage_y_dwn, fbMotionStage_pitch : FB_MotionStage;
 
@@ -32,6 +40,9 @@ VAR
 	nCurrGantryY : LINT;
 	nGantryTolX : LINT := 50000;
 	nGantryTolY : LINT := 50000;
+	
+	fCurrGantryX_um : REAL;
+	fCurrGantryY_um : REAL;
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[// M1K2
@@ -41,6 +52,18 @@ M2.nEnableMode; // Ydwn - Yright
 M3.nEnableMode; // Xup
 M4.nEnableMode; // Xdwn
 M5.nEnableMode; // PitchCoarse
+
+// Set Visu Limits:
+M1_Extras.bVisuHighLim := NOT M1.bLimitForwardEnable;
+M1_Extras.bVisuLowLim := NOT M1.bLimitBackwardEnable;
+M2_Extras.bVisuHighLim := NOT M2.bLimitForwardEnable;
+M2_Extras.bVisuLowLim := NOT M2.bLimitBackwardEnable;
+M3_Extras.bVisuHighLim := NOT M3.bLimitForwardEnable;
+M3_Extras.bVisuLowLim := NOT M3.bLimitBackwardEnable;
+M4_Extras.bVisuHighLim := NOT M4.bLimitForwardEnable;
+M4_Extras.bVisuLowLim := NOT M4.bLimitBackwardEnable;
+M5_Extras.bVisuHighLim := NOT M5.bLimitForwardEnable;
+M5_Extras.bVisuLowLim := NOT M5.bLimitBackwardEnable;
 
 // Encoder Reference Values: Taking from Axilon FAT
 // M1K2 Ref Vals
@@ -56,6 +79,8 @@ x_dwn_enc.Ref := 21280500;
 // Gantry Differences to monitor
 nCurrGantryY := ((ULINT_TO_LINT(y_up_enc.Count) - ULINT_TO_LINT(y_up_enc.Ref)) - (ULINT_TO_LINT(y_dwn_enc.Count) - ULINT_TO_LINT(y_dwn_enc.Ref)));
 nCurrGantryX := ((ULINT_TO_LINT(x_up_enc.Count) - ULINT_TO_LINT(x_up_enc.Ref)) - (ULINT_TO_LINT(x_dwn_enc.Count) - ULINT_TO_LINT(x_dwn_enc.Ref)));
+fCurrGantryY_um := nCurrGantryY / 1000.0;
+fCurrGantryX_um := nCurrGantryX / 1000.0;
 
 // E-stop
 M1.bHardwareEnable := stoEnable;
