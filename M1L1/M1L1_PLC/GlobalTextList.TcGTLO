@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.12">
   <GlobalTextList Name="GlobalTextList" Id="{5e988215-916c-4485-93cb-48ccd5d10692}">
     <XmlArchive>
       <Data>
@@ -33,6 +33,11 @@
             <o>
               <v n="TextID">"50"</v>
               <v n="TextDefault">"0 = Default Deceleration"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"319"</v>
+              <v n="TextDefault">"0 = Enabled, 2 = Disabled"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -76,8 +81,18 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"926"</v>
+              <v n="TextDefault">"Couple Status: 0 = Decoupled, 1 = Coupled"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"527"</v>
               <v n="TextDefault">"Couple Status: TRUE if coupled"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"986"</v>
+              <v n="TextDefault">"Current Gantry Difference (Axilon): %f"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -106,6 +121,36 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"598"</v>
+              <v n="TextDefault">"Decouple Motors: %f"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"107"</v>
+              <v n="TextDefault">"Disable"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"204"</v>
+              <v n="TextDefault">"Enable"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"256"</v>
+              <v n="TextDefault">"Enable Mode: %f"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"394"</v>
+              <v n="TextDefault">"Enable Status: 0 = Enabled, 2 = Disabled"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"627"</v>
+              <v n="TextDefault">"Ensure motors are coupled before attempting motion!"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"53"</v>
               <v n="TextDefault">"Error Code"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -113,6 +158,11 @@
             <o>
               <v n="TextID">"51"</v>
               <v n="TextDefault">"Error:"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"922"</v>
+              <v n="TextDefault">"Execute Decouple: %f"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -228,6 +278,16 @@
             <o>
               <v n="TextID">"46"</v>
               <v n="TextDefault">"Velocity: %f"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"225"</v>
+              <v n="TextDefault">"Write 0 to Enable, 2 to Disable"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"420"</v>
+              <v n="TextDefault">"Write 1 to decouple motors"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
