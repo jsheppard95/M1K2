@@ -73,16 +73,24 @@ M5_Extras.bVisuLowLim := NOT M5.bLimitBackwardEnable;
 // Encoder Reference Values: Taking from Axilon FAT
 // M1K2 Ref Vals
 (*
+// Axilon Ref Vals
 y_up_enc.Ref := 64970000;
 y_dwn_enc.Ref := 65030000;
-*)
 axilon_yup_enc_ref := 64970000;
 axilon_ydwn_enc_ref := 65030000;
-
+*)
+(*
+// Ref vals before alignment
 y_up_enc.Ref := 99975770;
 y_dwn_enc.Ref := 102564900;
 x_up_enc.Ref := 20302000;
 x_dwn_enc.Ref := 21280500;
+*)
+// Ref Vals after alignment
+y_up_enc.Ref := 100625840;
+y_dwn_enc.Ref := 103003870;
+x_up_enc.Ref := 19997640;
+x_dwn_enc.Ref := 21009080;
 
 // Gantry Differences to monitor
 nCurrGantryY := ((ULINT_TO_LINT(y_up_enc.Count) - ULINT_TO_LINT(y_up_enc.Ref)) - (ULINT_TO_LINT(y_dwn_enc.Count) - ULINT_TO_LINT(y_dwn_enc.Ref)));
